@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curro — Privacy Policy / Политика конфиденциальности</title>
+    <style>
+      :root {
+        --navy: #132346;
+        --gold: #c9a24b;
+        --text: #1e1e22;
+        --muted: #6b7280;
+        --bg: #f6f7f9;
+        --card: #ffffff;
+        --border: #e5e7eb;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 32px 20px 80px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 8px;
+      }
+      .logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: var(--navy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .logo svg {
+        width: 34px;
+        height: 34px;
+      }
+      .brand h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+      .brand span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .lang-toggle {
+        margin-left: auto;
+        display: flex;
+        gap: 6px;
+      }
+      .lang-toggle button {
+        border: 1px solid var(--border);
+        background: var(--card);
+        color: var(--muted);
+        padding: 6px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .lang-toggle button.active {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px 30px;
+        margin-top: 24px;
+      }
+      h2 {
+        font-size: 22px;
+        margin: 0 0 4px;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 26px 0 6px;
+        color: var(--navy);
+      }
+      p,
+      li {
+        font-size: 15px;
+      }
+      .eff {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 0;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        color: var(--gold);
+      }
+      .footer {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 28px;
+        text-align: center;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M78 32 A34 34 0 1 0 78 68"
+              fill="none"
+              stroke="#C9A24B"
+              stroke-width="12"
+              stroke-linecap="round"
+            />
+            <path
+              d="M65 24 l16 -6 l-3 18"
+              fill="none"
+              stroke="#C9A24B"
+              stroke-width="12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M65 76 l16 6 l-3 -18"
+              fill="none"
+              stroke="#C9A24B"
+              stroke-width="12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="brand">
+          <h1>Curro</h1>
+          <span>Currency Converter</span>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-ru" onclick="setLang('ru')">RU</button>
+        </div>
+      </header>
+
+      <!-- ============ ENGLISH ============ -->
+      <div class="card" id="en">
+        <h2>Privacy Policy</h2>
+        <p class="eff">Last updated: 3 July 2026</p>
+
+        <p>
+          This Privacy Policy explains how the <strong>Curro</strong> mobile app
+          (“the App”, “we”, “us”) handles information when you use it. Curro is
+          a currency converter with a built-in calculator. We designed it to
+          work without collecting personal data.
+        </p>
+
+        <h3>1. Information we do not collect</h3>
+        <p>
+          Curro does <strong>not</strong> require an account and does
+          <strong>not</strong> collect, store, or transmit any personal data
+          such as your name, email address, contacts, location, or advertising
+          identifiers. The App contains no analytics, tracking, or advertising
+          SDKs.
+        </p>
+
+        <h3>2. Data stored on your device</h3>
+        <p>
+          The following is stored
+          <strong>locally on your device only</strong> and never leaves it,
+          except as part of standard device backups you may enable:
+        </p>
+        <ul>
+          <li>your selected theme and language preference;</li>
+          <li>your favorite currencies;</li>
+          <li>your Premium purchase status;</li>
+          <li>
+            a cached copy of the latest exchange rates (so the App works
+            offline).
+          </li>
+        </ul>
+        <p>Uninstalling the App removes this local data.</p>
+
+        <h3>3. Network requests (exchange rates)</h3>
+        <p>
+          To show up-to-date rates, the App requests the current currency list
+          and exchange rates from our server
+          (<code>fantomartcurrency.pythonanywhere.com</code>) at most once per
+          day. These requests contain <strong>no personal data</strong>. As with
+          any internet request, our server automatically receives your device’s
+          IP address, which is used only to deliver the response and is not used
+          to identify or track you.
+        </p>
+
+        <h3>4. Purchases</h3>
+        <p>
+          Curro offers an optional one-time <strong>Premium</strong> purchase.
+          All payments are processed by <strong>Apple App Store</strong> or
+          <strong>Google Play</strong>. We never receive or store your payment
+          details. Purchase handling is subject to the privacy policies of Apple
+          and Google.
+        </p>
+
+        <h3>5. Third-party services</h3>
+        <ul>
+          <li>
+            <strong>Apple App Store / Google Play</strong> — app distribution
+            and in-app purchases.
+          </li>
+          <li>
+            <strong>Our rates server</strong> — provides currency and
+            exchange-rate data.
+          </li>
+        </ul>
+
+        <h3>6. Data sharing</h3>
+        <p>
+          We do not sell, rent, or share any user information, because we do not
+          collect any.
+        </p>
+
+        <h3>7. Children’s privacy</h3>
+        <p>
+          Curro does not collect personal data and is safe for users of all
+          ages. It is not directed at children under 13 in a way that collects
+          their information.
+        </p>
+
+        <h3>8. Changes to this policy</h3>
+        <p>
+          We may update this Privacy Policy from time to time. Changes will be
+          posted on this page with an updated “Last updated” date.
+        </p>
+
+        <h3>9. Contact</h3>
+        <p>
+          If you have any questions about this Privacy Policy, contact us at
+          <a href="mailto:stan.kozlovskii@gmail.com"
+            >stan.kozlovskii@gmail.com</a
+          >.
+        </p>
+      </div>
+
+      <!-- ============ RUSSIAN ============ -->
+      <div class="card" id="ru" hidden>
+        <h2>Политика конфиденциальности</h2>
+        <p class="eff">Последнее обновление: 3 июля 2026 г.</p>
+
+        <p>
+          Эта Политика конфиденциальности описывает, как мобильное приложение
+          <strong>Curro</strong> («Приложение», «мы») обрабатывает информацию
+          при его использовании. Curro — это конвертер валют со встроенным
+          калькулятором. Приложение спроектировано так, чтобы работать без сбора
+          персональных данных.
+        </p>
+
+        <h3>1. Данные, которые мы не собираем</h3>
+        <p>
+          Curro <strong>не</strong> требует регистрации и
+          <strong>не</strong> собирает, не хранит и не передаёт никакие
+          персональные данные — имя, адрес электронной почты, контакты,
+          местоположение или рекламные идентификаторы. В Приложении нет систем
+          аналитики, трекинга или рекламы.
+        </p>
+
+        <h3>2. Данные, хранящиеся на вашем устройстве</h3>
+        <p>
+          Следующие данные хранятся
+          <strong>только локально на вашем устройстве</strong> и не покидают
+          его, за исключением стандартных резервных копий устройства, если вы их
+          включили:
+        </p>
+        <ul>
+          <li>выбранная тема и язык;</li>
+          <li>избранные валюты;</li>
+          <li>статус покупки Премиум;</li>
+          <li>
+            кэш последних курсов валют (чтобы Приложение работало офлайн).
+          </li>
+        </ul>
+        <p>Удаление Приложения стирает эти локальные данные.</p>
+
+        <h3>3. Сетевые запросы (курсы валют)</h3>
+        <p>
+          Чтобы показывать актуальные курсы, Приложение запрашивает список валют
+          и текущие курсы с нашего сервера
+          (<code>fantomartcurrency.pythonanywhere.com</code>) не чаще одного
+          раза в день. Эти запросы
+          <strong>не содержат персональных данных</strong>. Как и при любом
+          интернет-запросе, наш сервер автоматически получает IP-адрес
+          устройства — он используется только для доставки ответа и не
+          применяется для идентификации или отслеживания.
+        </p>
+
+        <h3>4. Покупки</h3>
+        <p>
+          Curro предлагает необязательную разовую покупку
+          <strong>Премиум</strong>. Все платежи обрабатываются
+          <strong>Apple App Store</strong> или <strong>Google Play</strong>. Мы
+          не получаем и не храним ваши платёжные данные. Обработка покупок
+          регулируется политиками конфиденциальности Apple и Google.
+        </p>
+
+        <h3>5. Сторонние сервисы</h3>
+        <ul>
+          <li>
+            <strong>Apple App Store / Google Play</strong> — распространение
+            приложения и покупки.
+          </li>
+          <li>
+            <strong>Наш сервер курсов</strong> — предоставляет данные о валютах
+            и курсах.
+          </li>
+        </ul>
+
+        <h3>6. Передача данных</h3>
+        <p>
+          Мы не продаём, не сдаём в аренду и не передаём никакие данные
+          пользователей, поскольку не собираем их.
+        </p>
+
+        <h3>7. Конфиденциальность детей</h3>
+        <p>
+          Curro не собирает персональные данные и безопасно для пользователей
+          любого возраста. Приложение не направлено на детей младше 13 лет с
+          целью сбора их информации.
+        </p>
+
+        <h3>8. Изменения политики</h3>
+        <p>
+          Мы можем время от времени обновлять эту Политику конфиденциальности.
+          Изменения будут публиковаться на этой странице с обновлённой датой
+          «Последнее обновление».
+        </p>
+
+        <h3>9. Контакты</h3>
+        <p>
+          Если у вас есть вопросы по этой Политике конфиденциальности, напишите
+          нам на
+          <a href="mailto:stan.kozlovskii@gmail.com"
+            >stan.kozlovskii@gmail.com</a
+          >.
+        </p>
+      </div>
+
+      <p class="footer">© 2026 Curro. All rights reserved.</p>
+    </div>
+
+    <script>
+      function setLang(lang) {
+        document.getElementById("en").hidden = lang !== "en";
+        document.getElementById("ru").hidden = lang !== "ru";
+        document
+          .getElementById("btn-en")
+          .classList.toggle("active", lang === "en");
+        document
+          .getElementById("btn-ru")
+          .classList.toggle("active", lang === "ru");
+        document.documentElement.lang = lang;
+      }
+      // Default to Russian if the browser prefers it.
+      if ((navigator.language || "").toLowerCase().startsWith("ru"))
+        setLang("ru");
+    </script>
+  </body>
+</html>

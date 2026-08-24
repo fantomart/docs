@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curro — Support / Поддержка</title>
+    <style>
+      :root {
+        --navy: #132346;
+        --gold: #c9a24b;
+        --text: #1e1e22;
+        --muted: #6b7280;
+        --bg: #f6f7f9;
+        --card: #ffffff;
+        --border: #e5e7eb;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 32px 20px 80px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 8px;
+      }
+      .logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: var(--navy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .logo svg {
+        width: 34px;
+        height: 34px;
+      }
+      .brand h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+      .brand span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .lang-toggle {
+        margin-left: auto;
+        display: flex;
+        gap: 6px;
+      }
+      .lang-toggle button {
+        border: 1px solid var(--border);
+        background: var(--card);
+        color: var(--muted);
+        padding: 6px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .lang-toggle button.active {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px 30px;
+        margin-top: 24px;
+      }
+      h2 {
+        font-size: 22px;
+        margin: 0 0 4px;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 26px 0 6px;
+        color: var(--navy);
+      }
+      p,
+      li {
+        font-size: 15px;
+      }
+      .eff {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 0;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        color: var(--gold);
+      }
+      code {
+        background: rgba(127, 127, 127, 0.15);
+        padding: 0.1em 0.35em;
+        border-radius: 4px;
+      }
+      .footer {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 28px;
+        text-align: center;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M78 32 A34 34 0 1 0 78 68"
+              fill="none"
+              stroke="#C9A24B"
+              stroke-width="12"
+              stroke-linecap="round"
+            />
+            <path
+              d="M65 24 l16 -6 l-3 18"
+              fill="none"
+              stroke="#C9A24B"
+              stroke-width="12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M65 76 l16 6 l-3 -18"
+              fill="none"
+              stroke="#C9A24B"
+              stroke-width="12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="brand">
+          <h1>Curro</h1>
+          <span>Currency Converter</span>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-ru" onclick="setLang('ru')">RU</button>
+        </div>
+      </header>
+
+      <!-- ============ ENGLISH ============ -->
+      <div class="card" id="en">
+        <h2>Support</h2>
+        <p class="eff">Last updated: 24 August 2026</p>
+
+        <p>
+          <strong>Curro</strong> is a fast currency converter with a calculator
+          built in. This page is here to help.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Questions, bug reports, or feature ideas? Email
+          <a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a>
+          and we will get back to you.
+        </p>
+
+        <h3>How do I convert between two currencies?</h3>
+        <p>
+          Pick the two currencies at the top of the screen, then type an amount.
+          The converted value updates live as you type.
+        </p>
+
+        <h3>Can I do math while converting?</h3>
+        <p>
+          Yes. The input field is a calculator — type an expression like
+          <code>1250*3</code> and Curro converts the result straight away.
+        </p>
+
+        <h3>How do I add favorite currencies?</h3>
+        <p>
+          Open Settings and add currencies to your favorites for one-tap access,
+          or tap the star next to a currency in the picker.
+        </p>
+
+        <h3>Where do the exchange rates come from?</h3>
+        <p>
+          Rates are fetched once a day and cached on your device, so the app
+          works offline using the last saved rates. They are for reference only
+          and may differ from the rate your bank applies.
+        </p>
+
+        <h3>What does Premium include?</h3>
+        <p>
+          Premium is a one-time purchase that unlocks all themes and unlimited
+          favorite slots — no subscription. Reinstalled the app or switched
+          devices? Use <em>Restore purchase</em> on the Premium screen.
+        </p>
+
+        <h3>Where is my data stored?</h3>
+        <p>
+          Entirely on your device. Curro has no account and never uploads or
+          shares your settings. Uninstalling the app removes the data.
+        </p>
+
+        <h3>Privacy</h3>
+        <p>
+          See the
+          <a href="https://fantomart.github.io/docs/privacy-curro.html"
+            >privacy policy</a
+          >.
+        </p>
+      </div>
+
+      <!-- ============ RUSSIAN ============ -->
+      <div class="card" id="ru" hidden>
+        <h2>Поддержка</h2>
+        <p class="eff">Последнее обновление: 24 августа 2026 г.</p>
+
+        <p>
+          <strong>Curro</strong> — быстрый конвертер валют со встроенным
+          калькулятором. Эта страница поможет вам.
+        </p>
+
+        <h3>Контакты</h3>
+        <p>
+          Вопросы, сообщения об ошибках или идеи? Напишите на
+          <a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a>
+          — мы ответим.
+        </p>
+
+        <h3>Как конвертировать между двумя валютами?</h3>
+        <p>
+          Выберите две валюты вверху экрана и введите сумму. Результат
+          пересчитывается сразу по мере ввода.
+        </p>
+
+        <h3>Можно ли считать во время конвертации?</h3>
+        <p>
+          Да. Поле ввода — это калькулятор: введите выражение вроде
+          <code>1250*3</code>, и Curro сразу конвертирует результат.
+        </p>
+
+        <h3>Как добавить избранные валюты?</h3>
+        <p>
+          Откройте Настройки и добавьте валюты в избранное для быстрого доступа
+          или нажмите звёздочку рядом с валютой в списке выбора.
+        </p>
+
+        <h3>Откуда берутся курсы валют?</h3>
+        <p>
+          Курсы загружаются раз в день и кэшируются на устройстве, поэтому
+          приложение работает офлайн на последних сохранённых курсах. Они носят
+          справочный характер и могут отличаться от курса вашего банка.
+        </p>
+
+        <h3>Что входит в Премиум?</h3>
+        <p>
+          Премиум — это разовая покупка, которая открывает все темы и безлимит
+          избранного, без подписки. Переустановили приложение или сменили
+          устройство? Нажмите <em>Восстановить покупку</em> на экране Премиум.
+        </p>
+
+        <h3>Где хранятся мои данные?</h3>
+        <p>
+          Полностью на вашем устройстве. У Curro нет аккаунта, и он никогда не
+          загружает и не передаёт ваши настройки. Удаление приложения стирает
+          данные.
+        </p>
+
+        <h3>Конфиденциальность</h3>
+        <p>
+          Смотрите
+          <a href="https://fantomart.github.io/docs/privacy-curro.html"
+            >политику конфиденциальности</a
+          >.
+        </p>
+      </div>
+
+      <p class="footer">© 2026 Curro. All rights reserved.</p>
+    </div>
+
+    <script>
+      function setLang(lang) {
+        document.getElementById("en").hidden = lang !== "en";
+        document.getElementById("ru").hidden = lang !== "ru";
+        document
+          .getElementById("btn-en")
+          .classList.toggle("active", lang === "en");
+        document
+          .getElementById("btn-ru")
+          .classList.toggle("active", lang === "ru");
+        document.documentElement.lang = lang;
+      }
+      // Default to Russian if the browser prefers it.
+      if ((navigator.language || "").toLowerCase().startsWith("ru"))
+        setLang("ru");
+    </script>
+  </body>
+</html>

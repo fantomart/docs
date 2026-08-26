@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidden Cats — Support · Поддержка · Soporte</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #4E3B31; --bg: #FFF7EF; --code: #FBEADB; --line: #E7D3C0; --accent: #E07A50;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #EAD9C9; --bg: #2A211C; --code: #3A2E27; --line: #4A3A31; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0 auto; max-width: 720px; padding: 32px 22px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; color: var(--ink); background: var(--bg);
+  }
+  .cats { font-size: 2.4rem; line-height: 1; margin-bottom: 6px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.35rem; margin: 0 0 4px; }
+  h3 { font-size: 1.08rem; margin: 30px 0 8px; }
+  .sub { opacity: .75; margin: 0 0 20px; }
+  .meta { opacity: .7; font-size: .92rem; margin: 0 0 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  code { padding: 1px 6px; border-radius: 6px; background: var(--code); font-size: .9em; }
+  nav {
+    position: sticky; top: 0; z-index: 2; margin: 0 -22px; padding: 10px 22px;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  nav a {
+    text-decoration: none; padding: 5px 14px; border-radius: 999px;
+    border: 1px solid var(--line); font-size: .95rem;
+  }
+  section { scroll-margin-top: 60px; padding-top: 24px; }
+  section + section { border-top: 1px solid var(--line); margin-top: 44px; }
+  .card {
+    border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 18px; margin: 18px 0; background: var(--code);
+  }
+  .card p { margin: 6px 0; }
+  .top { display: inline-block; margin-top: 30px; font-size: .92rem; opacity: .8; }
+</style>
+</head>
+<body>
+  <div class="cats">🐱</div>
+  <h1>Hidden Cats · «Прятки» · Gatos Ocultos</h1>
+  <p class="sub">Support · Поддержка · Soporte</p>
+
+  <nav aria-label="Language">
+    <a href="#en">English</a>
+    <a href="#ru">Русский</a>
+    <a href="#es">Español</a>
+  </nav>
+
+  <!-- ─────────────────────────────  ENGLISH  ───────────────────────────── -->
+  <section id="en" lang="en">
+  <h2>Support — Hidden Cats</h2>
+  <p class="meta">Last updated: 26 August 2026 · App version 1.0.3</p>
+
+  <div class="card">
+    <p><strong>Write to us:</strong> <a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a></p>
+    <p>We usually answer within 2–3 days. One person makes this game, so please
+    be patient — every message is read.</p>
+    <p>To make a bug report useful, include: your device model, iOS or Android
+    version, the app version (Settings, bottom of the screen), what you did and
+    what happened instead.</p>
+  </div>
+
+  <h3>How the game works</h3>
+  <p>Hidden Cats is a single-player logic puzzle. Cats hide on a square board:
+  one per row, one per column, one per coloured region, and never in touching
+  cells — not even diagonally. A number in a cell tells you how many cats sit in
+  the eight cells around it. Every level is generated with a solver and only
+  ships if it has a single solution reachable <strong>without guessing</strong>.</p>
+  <p>The full rules are in the app: tap the <strong>?</strong> button in the top
+  bar at any time.</p>
+
+  <h3>Energy</h3>
+  <ul>
+    <li>Starting a level costs 1 energy. Restarting costs 1 more.</li>
+    <li>The bar holds up to <strong>7</strong>, and refills on its own at
+    <strong>+1 every 15 minutes</strong>, whether the app is open or not.</li>
+    <li>Out of energy? The panel over the board offers all three ways out: wait
+    (it shows the countdown), watch a rewarded ad for +3, or buy an
+    unlimited-energy pass.</li>
+    <li>The daily gift adds energy too — it grows with your login streak.</li>
+    <li>While a pass is active, levels and restarts cost nothing and the bar
+    keeps refilling underneath, so nothing is lost when it expires.</li>
+  </ul>
+
+  <h3>Scans and hints</h3>
+  <ul>
+    <li>A <strong>scan</strong> checks one cell. Scans are a single pool for the
+    whole game — not per level. They never expire, are never reset, and can be
+    stockpiled. You start with 3; more come from rewarded ads, the daily gift or
+    the shop.</li>
+    <li>A <strong>hint</strong> does not just reveal a cell — it explains the
+    deduction. Free hints per level depend on difficulty: Easy 2, Medium 1,
+    Hard and Expert 0. Beyond that a hint costs a rewarded ad.</li>
+    <li>You never <em>need</em> either one: every level is solvable by pure
+    logic.</li>
+  </ul>
+
+  <h3>I marked a cat in the wrong place</h3>
+  <p>A level has one life, so a wrong mark ends it — and there is
+  <strong>no undo</strong> anywhere in the game, by design. On the lose screen
+  you can restore the life by watching a rewarded ad (this costs no energy), or
+  start the level over for 1 energy.</p>
+
+  <h3>Difficulties are locked</h3>
+  <p>Everyone starts on Easy. Medium opens after <strong>5</strong> wins on
+  Easy, Hard after <strong>10</strong> wins on Medium, Expert after
+  <strong>10</strong> wins on Hard. The counter is shown on the Progress tab.</p>
+
+  <h3>Purchases</h3>
+  <ul>
+    <li>Everything sold in the Shop is a <strong>consumable</strong>: scan packs
+    and 24-hour or 7-day energy passes. They are delivered as soon as the store
+    confirms the payment.</li>
+    <li>Because they are consumables, there is <strong>no “restore purchases”</strong>
+    button — consumables are used up rather than owned, and a pass is tied to
+    time, not to a licence.</li>
+    <li>Paid for something and did not get it? Reopen the app while online: a
+    pending purchase is delivered on the next launch. If it still does not
+    arrive, write to us with the store receipt.</li>
+    <li>Refunds are handled by the store, not by us: on iOS via
+    <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, on
+    Android via Google Play order history.</li>
+    <li><strong>“Reset progress” does not delete purchased scans or an active
+    pass.</strong> It clears levels and win counts only.</li>
+  </ul>
+
+  <h3>Ads</h3>
+  <p>Every ad in the game is <strong>rewarded and optional</strong>: you start
+  it yourself, in exchange for energy, a scan, a hint, a skipped level or a
+  restored life. Nothing interrupts a move, and no ad is ever required to
+  finish a puzzle.</p>
+  <p>If an ad will not load, it is almost always the network or a temporarily
+  empty ad inventory — try again in a few minutes. In the EEA and the UK you can
+  change your advertising consent at any time in
+  <strong>Settings → Privacy</strong>. On iOS, tracking permission lives in
+  <strong>Settings → Privacy &amp; Security → Tracking</strong>; declining it
+  changes nothing about gameplay, progress or purchases.</p>
+
+  <h3>Reminders</h3>
+  <p>Reminders are scheduled by your own device — there is no push server and
+  nothing is sent anywhere. Turn them off in the game’s Settings, or in the
+  system settings for the app.</p>
+
+  <h3>Progress, backup and deleting your data</h3>
+  <p>There is no account and no cloud save: progress lives
+  <strong>only on your device</strong>. Deleting the app deletes it, and it
+  cannot be recovered or moved to another phone. All of it can be erased at any
+  time from <strong>Progress → Reset progress</strong> (which keeps paid items,
+  see above) or by uninstalling the app.</p>
+
+  <h3>Privacy</h3>
+  <p>The privacy policy is here:
+  <a href="https://fantomart.github.io/docs/privacy_hidden_cats.html#en">Privacy Policy</a>.</p>
+
+  <p><a class="top" href="#">↑ Top · Русский · Español</a>
+  <p><a href="https://fantomart.github.io/">← Hidden Cats home</a></p></p>
+  </section>
+
+  <!-- ─────────────────────────────  РУССКИЙ  ───────────────────────────── -->
+  <section id="ru" lang="ru">
+  <h2>Поддержка — «Прятки»</h2>
+  <p class="meta">Обновлено: 26 августа 2026 · Версия приложения 1.0.3</p>
+
+  <div class="card">
+    <p><strong>Написать нам:</strong> <a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a></p>
+    <p>Обычно отвечаем за 2–3 дня. Игру делает один человек, так что немного
+    терпения — прочитано будет каждое письмо.</p>
+    <p>Чтобы сообщение о баге пригодилось, приложите: модель устройства, версию
+    iOS или Android, версию приложения (в настройках, внизу экрана), что вы
+    делали и что произошло вместо ожидаемого.</p>
+  </div>
+
+  <h3>Как устроена игра</h3>
+  <p>«Прятки» — логическая головоломка на одного. Коты прячутся на квадратной
+  доске: по одному в строке, в столбце и в каждой цветной области, и никогда в
+  соседних клетках — даже по диагонали. Цифра в клетке говорит, сколько котов
+  сидит в восьми клетках вокруг неё. Каждый уровень собирается генератором и
+  проверяется решателем: в игру попадают только те, у которых есть единственное
+  решение и путь к нему <strong>без единой догадки</strong>.</p>
+  <p>Полные правила есть в самой игре — кнопка <strong>?</strong> в верхней
+  панели.</p>
+
+  <h3>Энергия</h3>
+  <ul>
+    <li>Начало уровня стоит 1 энергию. Перезапуск — ещё 1.</li>
+    <li>В шкале до <strong>7</strong> единиц, и она восстанавливается сама:
+    <strong>+1 каждые 15 минут</strong>, открыто приложение или нет.</li>
+    <li>Энергия кончилась — панель поверх доски предлагает сразу три выхода:
+    подождать (там же идёт обратный отсчёт), посмотреть рекламу за +3 или купить
+    пропуск с безлимитной энергией.</li>
+    <li>Ежедневный подарок тоже даёт энергию, и чем длиннее серия заходов, тем
+    больше.</li>
+    <li>Пока действует пропуск, уровни и перезапуски бесплатны, а шкала под ним
+    продолжает наполняться — в момент окончания вы не остаётесь на нуле.</li>
+  </ul>
+
+  <h3>Сканы и подсказки</h3>
+  <ul>
+    <li><strong>Скан</strong> проверяет одну клетку. Сканы — общий запас на всю
+    игру, а не на уровень: они не сгорают, не сбрасываются и копятся. В начале
+    их 3; ещё дают реклама, ежедневный подарок и магазин.</li>
+    <li><strong>Подсказка</strong> не просто открывает клетку, а объясняет ход
+    рассуждения. Бесплатных подсказок за уровень: лёгкий — 2, средний — 1,
+    сложный и эксперт — 0. Дальше подсказка стоит просмотра рекламы.</li>
+    <li>Ни то, ни другое не <em>обязательно</em>: любой уровень решается чистой
+    логикой.</li>
+  </ul>
+
+  <h3>Отметил кота не там</h3>
+  <p>На уровень даётся одна жизнь, поэтому ошибочная отметка его заканчивает, и
+  <strong>отмены хода в игре нет</strong> — так задумано. На экране проигрыша
+  жизнь можно вернуть за просмотр рекламы (энергия при этом не тратится) или
+  начать уровень заново за 1 энергию.</p>
+
+  <h3>Сложности закрыты</h3>
+  <p>Все начинают с лёгкой. Средняя открывается после <strong>5</strong> побед на
+  лёгкой, сложная — после <strong>10</strong> побед на средней, эксперт — после
+  <strong>10</strong> побед на сложной. Счётчик виден на вкладке «Прогресс».</p>
+
+  <h3>Покупки</h3>
+  <ul>
+    <li>Всё, что продаётся в магазине, — <strong>расходуемые товары</strong>:
+    наборы сканов и пропуски на 24 часа или 7 дней. Они начисляются сразу после
+    подтверждения оплаты магазином.</li>
+    <li>Именно поэтому кнопки <strong>«восстановить покупки»</strong> нет:
+    расходуемое тратится, а не принадлежит навсегда, и пропуск привязан ко
+    времени, а не к лицензии.</li>
+    <li>Оплатили, но не получили? Откройте приложение с интернетом — незавершённая
+    покупка выдаётся при следующем запуске. Если так и не пришло, напишите нам и
+    приложите чек магазина.</li>
+    <li>Возвраты делает магазин, а не мы: на iOS — через
+    <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, на
+    Android — через историю заказов Google Play.</li>
+    <li><strong>«Сбросить прогресс» не удаляет купленные сканы и активный
+    пропуск.</strong> Стираются только уровни и счётчики побед.</li>
+  </ul>
+
+  <h3>Реклама</h3>
+  <p>Вся реклама в игре — <strong>за награду и по желанию</strong>: вы сами
+  запускаете ролик в обмен на энергию, скан, подсказку, пропуск уровня или
+  возвращённую жизнь. Посреди хода ничего не выскакивает, и без рекламы можно
+  пройти любую головоломку.</p>
+  <p>Если ролик не загружается, дело почти всегда в сети или во временно пустом
+  рекламном инвентаре — попробуйте через несколько минут. В ЕЭЗ и Великобритании
+  согласие на рекламу меняется в любой момент в разделе
+  <strong>Настройки → Конфиденциальность</strong>. На iOS разрешение на
+  отслеживание живёт в <strong>Настройках → Конфиденциальность и безопасность →
+  Отслеживание</strong>; отказ не влияет ни на игру, ни на прогресс, ни на
+  покупки.</p>
+
+  <h3>Напоминания</h3>
+  <p>Напоминания планирует само устройство — сервера уведомлений нет и наружу
+  ничего не уходит. Выключаются в настройках игры или в системных настройках
+  приложения.</p>
+
+  <h3>Прогресс, резервная копия и удаление данных</h3>
+  <p>Аккаунта и облачных сохранений нет: прогресс хранится
+  <strong>только на устройстве</strong>. Удаление приложения удаляет и его —
+  восстановить или перенести на другой телефон нельзя. Стереть всё можно в любой
+  момент: <strong>Прогресс → Сбросить прогресс</strong> (платные товары при этом
+  остаются, см. выше) или удалением приложения.</p>
+
+  <h3>Конфиденциальность</h3>
+  <p>Политика конфиденциальности:
+  <a href="https://fantomart.github.io/docs/privacy_hidden_cats.html#ru">Политика конфиденциальности</a>.</p>
+
+  <p><a class="top" href="#">↑ Наверх · English · Español</a>
+  <p><a href="https://fantomart.github.io/">← На главную Hidden Cats</a></p></p>
+  </section>
+
+  <!-- ─────────────────────────────  ESPAÑOL  ───────────────────────────── -->
+  <section id="es" lang="es">
+  <h2>Soporte — Gatos Ocultos</h2>
+  <p class="meta">Actualizado: 26 de agosto de 2026 · Versión de la app 1.0.3</p>
+
+  <div class="card">
+    <p><strong>Escríbenos:</strong> <a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a></p>
+    <p>Solemos responder en 2–3 días. El juego lo hace una sola persona, así que
+    un poco de paciencia: se lee cada mensaje.</p>
+    <p>Para que un informe de error sirva, incluye: modelo del dispositivo,
+    versión de iOS o Android, versión de la app (en Ajustes, al final de la
+    pantalla), qué hiciste y qué ocurrió en su lugar.</p>
+  </div>
+
+  <h3>Cómo funciona el juego</h3>
+  <p>Gatos Ocultos es un puzle lógico para un jugador. Los gatos se esconden en
+  un tablero cuadrado: uno por fila, uno por columna, uno por región de color y
+  nunca en casillas contiguas, ni siquiera en diagonal. El número de una casilla
+  indica cuántos gatos hay en las ocho casillas que la rodean. Cada nivel lo
+  construye un generador y lo verifica un solucionador: solo llegan los que
+  tienen una única solución alcanzable <strong>sin adivinar</strong>.</p>
+  <p>Las reglas completas están en la app: el botón <strong>?</strong> de la
+  barra superior.</p>
+
+  <h3>Energía</h3>
+  <ul>
+    <li>Empezar un nivel cuesta 1 de energía. Reiniciarlo, 1 más.</li>
+    <li>La barra llega a <strong>7</strong> y se rellena sola:
+    <strong>+1 cada 15 minutos</strong>, con la app abierta o cerrada.</li>
+    <li>¿Sin energía? El panel sobre el tablero ofrece las tres salidas a la vez:
+    esperar (con cuenta atrás a la vista), ver un anuncio recompensado por +3 o
+    comprar un pase de energía ilimitada.</li>
+    <li>El regalo diario también da energía, y crece con tu racha de días.</li>
+    <li>Mientras el pase está activo, los niveles y los reinicios no cuestan
+    nada y la barra sigue rellenándose por debajo, así que al caducar no te
+    quedas a cero.</li>
+  </ul>
+
+  <h3>Escaneos y pistas</h3>
+  <ul>
+    <li>Un <strong>escaneo</strong> comprueba una casilla. Los escaneos son una
+    reserva única para todo el juego, no por nivel: no caducan, no se reinician
+    y se pueden acumular. Empiezas con 3; se consiguen más con anuncios, el
+    regalo diario o la tienda.</li>
+    <li>Una <strong>pista</strong> no se limita a revelar una casilla: explica el
+    razonamiento. Pistas gratis por nivel: fácil 2, medio 1, difícil y experto 0.
+    A partir de ahí, cada pista cuesta un anuncio recompensado.</li>
+    <li>Ninguna de las dos es <em>necesaria</em>: todo nivel se resuelve con
+    lógica pura.</li>
+  </ul>
+
+  <h3>He marcado un gato donde no era</h3>
+  <p>Cada nivel tiene una vida, así que una marca equivocada lo termina, y en el
+  juego <strong>no hay deshacer</strong>: es una decisión de diseño. En la
+  pantalla de derrota puedes recuperar la vida viendo un anuncio recompensado
+  (no cuesta energía) o reiniciar el nivel por 1 de energía.</p>
+
+  <h3>Las dificultades están bloqueadas</h3>
+  <p>Todo el mundo empieza en Fácil. Medio se abre con <strong>5</strong>
+  victorias en Fácil; Difícil, con <strong>10</strong> en Medio; Experto, con
+  <strong>10</strong> en Difícil. El contador está en la pestaña Progreso.</p>
+
+  <h3>Compras</h3>
+  <ul>
+    <li>Todo lo que se vende en la tienda es <strong>consumible</strong>: packs
+    de escaneos y pases de energía de 24 horas o 7 días. Se entregan en cuanto la
+    tienda confirma el pago.</li>
+    <li>Por eso no hay botón de <strong>«restaurar compras»</strong>: lo
+    consumible se gasta en lugar de poseerse, y un pase depende del tiempo, no de
+    una licencia.</li>
+    <li>¿Has pagado y no lo has recibido? Abre la app con conexión: una compra
+    pendiente se entrega en el siguiente arranque. Si aun así no llega,
+    escríbenos con el recibo de la tienda.</li>
+    <li>Los reembolsos los gestiona la tienda, no nosotros: en iOS desde
+    <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>; en
+    Android, desde el historial de pedidos de Google Play.</li>
+    <li><strong>«Reiniciar progreso» no borra los escaneos comprados ni un pase
+    activo.</strong> Solo borra niveles y victorias.</li>
+  </ul>
+
+  <h3>Anuncios</h3>
+  <p>Todos los anuncios del juego son <strong>recompensados y opcionales</strong>:
+  los inicias tú a cambio de energía, un escaneo, una pista, saltarte un nivel o
+  recuperar una vida. Nada interrumpe una jugada y ningún anuncio hace falta para
+  terminar un puzle.</p>
+  <p>Si un anuncio no carga, casi siempre es la red o un inventario publicitario
+  momentáneamente vacío: inténtalo unos minutos después. En el EEE y el Reino
+  Unido puedes cambiar tu consentimiento publicitario cuando quieras en
+  <strong>Ajustes → Privacidad</strong>. En iOS, el permiso de seguimiento está
+  en <strong>Ajustes → Privacidad y seguridad → Rastreo</strong>; rechazarlo no
+  cambia nada del juego, del progreso ni de las compras.</p>
+
+  <h3>Recordatorios</h3>
+  <p>Los recordatorios los programa tu propio dispositivo: no hay servidor de
+  notificaciones y no se envía nada fuera. Se desactivan en los Ajustes del juego
+  o en los ajustes del sistema para la app.</p>
+
+  <h3>Progreso, copia de seguridad y borrado de datos</h3>
+  <p>No hay cuenta ni guardado en la nube: el progreso vive
+  <strong>solo en tu dispositivo</strong>. Si borras la app, se borra con ella y
+  no se puede recuperar ni pasar a otro teléfono. Puedes eliminarlo todo cuando
+  quieras desde <strong>Progreso → Reiniciar progreso</strong> (que conserva lo
+  comprado, ver arriba) o desinstalando la app.</p>
+
+  <h3>Privacidad</h3>
+  <p>Política de privacidad:
+  <a href="https://fantomart.github.io/docs/privacy_hidden_cats.html#es">Política de privacidad</a>.</p>
+
+  <p><a class="top" href="#">↑ Arriba · English · Русский</a>
+  <p><a href="https://fantomart.github.io/">← Inicio de Hidden Cats</a></p></p>
+  </section>
+
+</body>
+</html>

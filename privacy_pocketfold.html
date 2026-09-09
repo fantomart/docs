@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocketfold — Privacy Policy</title>
+<meta name="description" content="Privacy policy of the Pocketfold travel planner app: what stays on your device and the three cases in which data leaves it.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --fg: #1d1c1a;
+    --muted: #5f5c55;
+    --hair: #e3e0d8;
+    --accent: #0d7a6f;
+    --tint: #f1efe8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514;
+      --fg: #ece9e1;
+      --muted: #a39f95;
+      --hair: #2c2b28;
+      --accent: #4fc0b2;
+      --tint: #1f1e1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { border-bottom: 1px solid var(--hair); padding-bottom: 20px; margin-bottom: 32px; }
+  .brand { font-weight: 700; letter-spacing: .02em; color: var(--accent); text-transform: uppercase; font-size: 13px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 8px 0 16px; }
+  h2 { font-size: 22px; margin: 44px 0 12px; line-height: 1.3; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  dl.meta { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0; font-size: 15px; color: var(--muted); }
+  dl.meta dt { font-weight: 600; }
+  dl.meta dd { margin: 0; }
+  .summary { background: var(--tint); border: 1px solid var(--hair); border-radius: 12px; padding: 16px 20px; }
+  .summary ul { margin: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 12px 0 20px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 10px; border-bottom: 1px solid var(--hair); }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+  .table-wrap { overflow-x: auto; }
+  code { font: 15px/1.4 "SF Mono", Menlo, Consolas, monospace; background: var(--tint); padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--hair); color: var(--muted); font-size: 14px; }
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">Pocketfold</div>
+  <h1>Privacy Policy</h1>
+  <dl class="meta">
+    <dt>Effective date</dt><dd>9 September 2026</dd>
+    <dt>Developer</dt><dd>Stanislav Kozlovskii (“we”, “us”)</dd>
+    <dt>Contact</dt><dd><a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a></dd>
+  </dl>
+</header>
+
+<p>Pocketfold is an offline-first travel planner for iOS and Android. This policy describes what data the app handles, what stays on your device, and the three situations in which data leaves it.</p>
+
+<h2 id="summary">1. The short version</h2>
+<div class="summary">
+<ul>
+  <li>Everything you enter — trips, flights, hotels, activities, visa notes, checklists, expenses, attachments, reminders — is stored <strong>only on your device</strong>. There is no account and no cloud copy. We cannot see it.</li>
+  <li>Data leaves your device in exactly three cases: <strong>(a)</strong> you choose to scan a document, <strong>(b)</strong> the app refreshes currency exchange rates, <strong>(c)</strong> you buy or restore a subscription through Google Play or the App Store.</li>
+  <li>We do not show ads, do not use advertising identifiers, and do not collect analytics or crash reports.</li>
+</ul>
+</div>
+
+<h2 id="on-device">2. Data stored on your device</h2>
+<p>All trip content lives in a local database inside the app’s private storage. Attachments (tickets, bookings, photos) are copied into the app’s private folder. Reminders are local notifications scheduled on the device.</p>
+<p>On Android the app opts out of Google’s automatic cloud backup, so this database is not uploaded to your Google account. On iOS the app’s data is included in device backups you configure yourself (iCloud or computer backups); those are governed by Apple’s terms.</p>
+<p>You can export all of it as a single backup file (Settings → Export) and import it on another device. You can delete all of it at any time (Settings → Delete all data). Uninstalling the app deletes it too.</p>
+
+<h2 id="scanning">3. Document scanning (optional, Pocketfold PRO feature)</h2>
+<p>When you tap “Scan” and pick or photograph a ticket, boarding pass, booking confirmation, passport or similar document, the app sends <strong>that image or PDF</strong> to our recognition server so the fields can be filled in for you. Nothing is sent unless you choose to scan; the app asks for your consent before the first scan.</p>
+<p>What happens on our side:</p>
+<ul>
+  <li>The file is received by a server we operate on <strong>Google Cloud Run in the <code>europe-west1</code> (Belgium) region</strong>. It is held in memory only for the duration of the request; we do not write it to disk or to any database.</li>
+  <li>The file is forwarded to the <strong>Google Gemini API</strong> (Google LLC / Google Ireland Ltd) for text recognition. Google acts as our processor. Under the Gemini API terms for paid services, Google does not use this content to train its models, but may retain prompts for a limited period for abuse detection. See <a href="https://ai.google.dev/gemini-api/terms" rel="noopener">Google’s Gemini API terms</a>.</li>
+  <li>The recognised fields are returned to your device and stored there, like anything else you type. <strong>We do not keep the file or the recognised text.</strong> Always check recognised data against the original document.</li>
+  <li>Together with the file, the request carries an anonymous app identifier (see <a href="#purchases">section 5</a>) and an app token that identifies the Pocketfold app, not you.</li>
+</ul>
+<p>What we retain about the request:</p>
+<ul>
+  <li><strong>Standard server logs</strong> (Google Cloud Logging): your IP address, request time, response code, request size and duration. No file contents, no recognised text. Retained for 30 days, then deleted automatically.</li>
+  <li><strong>Usage counters</strong> needed to enforce scan limits: a daily count of scans per IP address (to cap free usage and protect the service from abuse) and a per-period count of scans per anonymous app identifier or, for subscribers, per store purchase reference. Counters contain numbers and dates only — never document content.</li>
+</ul>
+<p>Documents you scan may contain sensitive personal data (name, passport number, date of birth, nationality). We process them solely to fill in the form on your device and for no other purpose.</p>
+
+<h2 id="rates">4. Currency exchange rates</h2>
+<p>When you open an expense screen the app may request the day’s exchange rates from a rate server we operate. The request contains no user data — it asks for the current rate table and nothing else. As with any web request, that server sees your IP address in its standard logs.</p>
+
+<h2 id="purchases">5. Subscriptions and purchases (RevenueCat)</h2>
+<p>Pocketfold PRO is sold through Google Play and the App Store. Payment is handled entirely by Google or Apple; <strong>we never see your card or bank details.</strong></p>
+<p>To know whether your subscription is active, the app uses <strong>RevenueCat</strong> (RevenueCat, Inc.), a subscription-management service. RevenueCat generates a random, anonymous app identifier on your device (it is not tied to your name, email or Google/Apple account) and receives from the store the purchase receipt: product bought, purchase and expiry dates, transaction identifiers. RevenueCat’s own policy: <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a>.</p>
+<p>The same anonymous identifier is sent with each scan request (<a href="#scanning">section 3</a>) so our server can look up your plan and count your scans. Our server queries RevenueCat with that identifier; the answer is cached for one minute.</p>
+
+<h2 id="notifications">6. Notifications</h2>
+<p>Reminders are scheduled locally on the device with the operating system’s notification service. No notification data leaves the device and we run no push server.</p>
+
+<h2 id="permissions">7. Permissions the app asks for</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Notifications</td><td>Reminders for check-in, departure, visa deadlines and checklist items</td></tr>
+    <tr><td>Run after reboot (Android)</td><td>Re-arm scheduled reminders after the device restarts</td></tr>
+    <tr><td>Internet</td><td>Scanning, exchange rates, purchases — nothing else</td></tr>
+    <tr><td>Photos / files (via the system picker)</td><td>Attach a ticket or photo, or pick a document to scan. The app uses the system photo and file pickers and receives only the items you select; it has no access to your library</td></tr>
+    <tr><td>Camera (via the system camera)</td><td>Photograph a document to scan or attach. The app receives only the photo you take</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="third-parties">8. Third parties</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Party</th><th>What they receive</th><th>Role</th></tr></thead>
+  <tbody>
+    <tr><td>Google Cloud (Cloud Run, Cloud Logging, Firestore)</td><td>Scanned files in transit, request logs, usage counters</td><td>Hosting provider / processor</td></tr>
+    <tr><td>Google Gemini API</td><td>Scanned files</td><td>Text-recognition processor</td></tr>
+    <tr><td>RevenueCat, Inc.</td><td>Anonymous app identifier, store receipts</td><td>Subscription-management processor</td></tr>
+    <tr><td>Google Play / Apple App Store</td><td>Your purchase</td><td>Merchant of record</td></tr>
+  </tbody>
+</table>
+</div>
+<p>We do not sell personal data and do not share it with anyone for advertising or marketing.</p>
+
+<h2 id="security">9. Security</h2>
+<p>All network connections use TLS. Server-side counters and logs are stored in Google Cloud under access controls limited to the developer. The database on your device is protected by your device’s own security (passcode, encryption) — we recommend keeping it enabled, since the app can hold copies of travel documents.</p>
+
+<h2 id="retention">10. Data retention summary</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Data</th><th>Where</th><th>How long</th></tr></thead>
+  <tbody>
+    <tr><td>Trip content, attachments</td><td>Your device only</td><td>Until you delete it or uninstall</td></tr>
+    <tr><td>Scanned file</td><td>Our server memory; Google Gemini</td><td>Seconds (request duration); Google — per its abuse-monitoring retention</td></tr>
+    <tr><td>Server request logs</td><td>Google Cloud Logging</td><td>30 days</td></tr>
+    <tr><td>Free-tier daily counters (per IP)</td><td>Firestore</td><td>Current day; older documents are purged</td></tr>
+    <tr><td>Scan counters (per anonymous id / purchase reference)</td><td>Firestore</td><td>Current billing period, plus purchase references needed to prevent double-crediting</td></tr>
+    <tr><td>Purchase records</td><td>RevenueCat, Google/Apple</td><td>Per their policies</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="rights">11. Your rights</h2>
+<p>You can view, export and delete all on-device data yourself from the app. To ask us to delete the server-side counters associated with your anonymous identifier, or for any other request about your data, email <a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a> and include the anonymous identifier shown in Settings → About.</p>
+
+<h2 id="children">12. Children</h2>
+<p>Pocketfold is not directed at children under 16 and we do not knowingly collect data from them.</p>
+
+<h2 id="changes">13. Changes</h2>
+<p>We will post any changes on this page and update the effective date. Material changes to what leaves your device will also be announced in the app.</p>
+
+<h2 id="contact">14. Contact</h2>
+<p>Stanislav Kozlovskii<br><a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a></p>
+
+<footer>
+  <p>Pocketfold · <a href="terms_pocketfold.html">Terms of Use</a></p>
+  <p>© 2026 Stanislav Kozlovskii</p>
+</footer>
+</main>
+</body>
+</html>

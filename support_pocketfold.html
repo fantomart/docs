@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocketfold — Support</title>
+<meta name="description" content="Support for the Pocketfold travel planner app: how to reach us, and answers about scanning, subscriptions, backups and reminders.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --fg: #1d1c1a;
+    --muted: #5f5c55;
+    --hair: #e3e0d8;
+    --accent: #0d7a6f;
+    --tint: #f1efe8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514;
+      --fg: #ece9e1;
+      --muted: #a39f95;
+      --hair: #2c2b28;
+      --accent: #4fc0b2;
+      --tint: #1f1e1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { border-bottom: 1px solid var(--hair); padding-bottom: 20px; margin-bottom: 32px; }
+  .brand { font-weight: 700; letter-spacing: .02em; color: var(--accent); text-transform: uppercase; font-size: 13px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 8px 0 16px; }
+  h2 { font-size: 22px; margin: 44px 0 12px; line-height: 1.3; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  dl.meta { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0; font-size: 15px; color: var(--muted); }
+  dl.meta dt { font-weight: 600; }
+  dl.meta dd { margin: 0; }
+  .summary { background: var(--tint); border: 1px solid var(--hair); border-radius: 12px; padding: 16px 20px; }
+  .summary ul { margin: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 12px 0 20px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 10px; border-bottom: 1px solid var(--hair); }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+  .table-wrap { overflow-x: auto; }
+  code { font: 15px/1.4 "SF Mono", Menlo, Consolas, monospace; background: var(--tint); padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--hair); color: var(--muted); font-size: 14px; }
+  footer p { margin: 0 0 6px; }
+</style>
+<style>
+  details { border-bottom: 1px solid var(--hair); padding: 12px 0; }
+  details summary { cursor: pointer; font-weight: 600; list-style: none; padding-right: 24px; position: relative; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after { content: "+"; position: absolute; right: 0; top: 0; color: var(--muted); }
+  details[open] summary::after { content: "–"; }
+  details p, details ul { margin-top: 10px; color: var(--fg); }
+  .cta { display: inline-block; background: var(--accent); color: #fff; padding: 12px 20px; border-radius: 10px; font-weight: 600; text-decoration: none; }
+  .cta:hover { opacity: .92; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 16px 0 0; }
+  .card { background: var(--tint); border: 1px solid var(--hair); border-radius: 12px; padding: 14px 16px; font-size: 15px; }
+  .card b { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">Pocketfold</div>
+  <h1>Support</h1>
+  <dl class="meta">
+    <dt>App</dt><dd>Pocketfold — offline travel planner for iOS and Android</dd>
+    <dt>Developer</dt><dd>Stanislav Kozlovskii</dd>
+    <dt>Contact</dt><dd><a href="mailto:stan.kozlovskii@gmail.com">stan.kozlovskii@gmail.com</a></dd>
+  </dl>
+</header>
+
+<div class="summary">
+  <p><strong>Something not working, or a question about a purchase?</strong> Email us — we usually answer within two business days.</p>
+  <p><a class="cta" href="mailto:stan.kozlovskii@gmail.com?subject=Pocketfold%20support">Write to support</a></p>
+  <p style="margin:12px 0 0;font-size:15px;color:var(--muted)">Helpful to include: your phone model and OS version, the app version (Settings → About), what you did and what you expected. For subscription questions add the anonymous identifier from Settings → About — it lets us look up your scan quota without any personal data.</p>
+</div>
+
+<h2 id="faq">Frequently asked questions</h2>
+
+<details>
+  <summary>Does Pocketfold need an account or an internet connection?</summary>
+  <p>No. There is no account. All your trips, documents, checklists and expenses live on your device and work with no connection. The app goes online only in three cases: when you choose to scan a document, when it refreshes currency exchange rates, and when it checks a subscription through the store.</p>
+</details>
+
+<details>
+  <summary>What happens to a document when I scan it?</summary>
+  <p>Scanning is optional and asks for your consent the first time. The file you pick is sent to our server and passed to Google Gemini, which reads the fields (flight number, dates, seat, booking reference, price…). Neither the file nor the recognised data is stored on the server; it lives only in memory for the duration of the request. Always compare recognised data with the original document before saving. Details: <a href="privacy_pocketfold.html#scanning">Privacy Policy → Document scanning</a>.</p>
+</details>
+
+<details>
+  <summary>How many scans do I get, and what does PRO add?</summary>
+  <p>The first scan is free. Pocketfold PRO adds 30 scans a month or 360 scans a year, and subscribers who run out can buy a pack of 30 more for the current period. Everything else in the app — trips, timeline, visas, checklists, expenses, backups — is free and stays free.</p>
+</details>
+
+<details>
+  <summary>How do I cancel or manage my subscription?</summary>
+  <p>Subscriptions are billed by the store, not by us, and renew automatically until you cancel at least 24 hours before the end of the current period.</p>
+  <ul>
+    <li><strong>iPhone:</strong> Settings → your name → Subscriptions → Pocketfold PRO → Cancel.</li>
+    <li><strong>Android:</strong> Google Play → profile → Payments &amp; subscriptions → Subscriptions → Pocketfold PRO → Cancel.</li>
+  </ul>
+  <p>In the app, Settings → Subscription → “Manage subscription” opens the same page. Deleting the app does not cancel a subscription.</p>
+</details>
+
+<details>
+  <summary>I paid but the app still says I am on the free plan</summary>
+  <p>Open Settings → Subscription → <strong>Restore purchases</strong>, signed in to the same App Store or Google Play account you bought with. If that does not help, email us with the anonymous identifier from Settings → About and the store receipt; we will check the entitlement on our side.</p>
+</details>
+
+<details>
+  <summary>Can I get a refund?</summary>
+  <p>Refunds for store purchases are handled by Apple or Google under their own policies: <a href="https://support.apple.com/HT204084" rel="noopener">request a refund from Apple</a>, <a href="https://support.google.com/googleplay/answer/2479637" rel="noopener">request a refund from Google Play</a>. We cannot issue store refunds directly, but write to us if something went wrong and we will help where we can.</p>
+</details>
+
+<details>
+  <summary>How do I move my data to a new phone or make a backup?</summary>
+  <p>Settings → Data → <strong>Export to file</strong> saves every trip with its attachments into one file. On the new device, Settings → Data → <strong>Import from file</strong> restores it. Import replaces the current data, so export first if the new device already has trips. Works across iOS and Android.</p>
+</details>
+
+<details>
+  <summary>Reminders do not arrive</summary>
+  <p>Reminders are local notifications; nothing is sent from a server. Check that notifications are allowed for Pocketfold in the system settings, that reminders are switched on in Settings → Reminders, and that Low Power / Focus modes are not silencing them. The app keeps at most the nearest 60 reminders armed at a time.</p>
+</details>
+
+<details>
+  <summary>Why does a flight land “earlier” than it departs?</summary>
+  <p>Times are shown as printed on the ticket, in the local time of each airport, with the time zone next to them. A Tokyo → San Francisco flight really does land at an earlier wall-clock time than it departs; the timeline still orders events by the real moment in time, so the order is correct.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>Settings → Data → <strong>Delete all data</strong> removes every trip, attachment, reminder and setting from the device. Uninstalling the app does the same. To remove the server-side scan counters tied to your anonymous identifier, email us the identifier from Settings → About — see <a href="privacy_pocketfold.html#rights">Privacy Policy → Your rights</a>.</p>
+</details>
+
+<details>
+  <summary>Is the visa and ETA information in the app authoritative?</summary>
+  <p>No. Country cards hold what you enter about your own route and are a planning aid. Entry rules change; always confirm with the official source of the country you are visiting before you travel.</p>
+</details>
+
+<h2 id="report">Report a bug or request a feature</h2>
+<p>Email <a href="mailto:stan.kozlovskii@gmail.com?subject=Pocketfold%20bug">stan.kozlovskii@gmail.com</a> with the steps to reproduce and, if possible, a screenshot. A backup file (Settings → Data → Export to file) helps us reproduce data-specific problems — it contains your trips and documents, so send it only if you are comfortable with that; we delete it once the issue is resolved.</p>
+
+<h2 id="links">Legal</h2>
+<div class="grid">
+  <div class="card"><b>Privacy Policy</b><a href="privacy_pocketfold.html">privacy_pocketfold.html</a></div>
+  <div class="card"><b>Terms of Use</b><a href="terms_pocketfold.html">terms_pocketfold.html</a></div>
+</div>
+
+<footer>
+  <p>Pocketfold · <a href="privacy_pocketfold.html">Privacy Policy</a> · <a href="terms_pocketfold.html">Terms of Use</a></p>
+  <p>© 2026 Stanislav Kozlovskii</p>
+</footer>
+</main>
+</body>
+</html>
